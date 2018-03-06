@@ -12,7 +12,7 @@ export default class extends Component {
     align: PropTypes.string,
     gap: PropTypes.string,
     justify: PropTypes.string,
-    left: PropTypes.element,
+    aside: PropTypes.element,
     elements: PropTypes.array,
   };
 
@@ -37,7 +37,7 @@ export default class extends Component {
       className,
       align,
       justify,
-      left,
+      aside,
       gap,
       elements,
       ...props
@@ -47,7 +47,7 @@ export default class extends Component {
         {...props}
         data-align={align}
         className={classNames('webkit-sassui-flex-lfixed-rauto react-media-lfixed-rauto', className)}>
-        { left && <aside className="left"> {left} </aside> }
+        { aside && <aside className="left"> {aside} </aside> }
         <div
         style={{ marginLeft: gap }}
         className="right webkit-sassui-flex-justify" data-align="normal"

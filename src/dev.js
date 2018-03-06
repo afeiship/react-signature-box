@@ -21,7 +21,7 @@ class App extends React.Component{
   render(){
     return (
       <div className="hello-react-media-lfixed-rauto">
-      <ReactMediaLfixedRauto ref='rc' left={
+      <ReactMediaLfixedRauto ref='rc' aside={
         <img src="http://cms-bucket.nosdn.127.net/e99ac4afe74d4375b321d50178772d9620180306123403.png" width="94" />
       }
       elements={[
@@ -29,9 +29,17 @@ class App extends React.Component{
         <p style={{ fontSize:'12px', lineHeight: '16px', color:'#999'}} > <em style={{ float: 'right'}}>2018-03-06 13:06:36</em> <span>新闻 &nbsp; 10分钟前</span></p>
       ]}
       />
-      <ReactMediaLfixedRauto ref='rc' left={
+      <ReactMediaLfixedRauto ref='rc' aside={
         <img src="http://cms-bucket.nosdn.127.net/e86633e3eeff4e0aa4ac103934c6989f20180305191752.png" width="94" />
       }
+      elements={[
+        <h1 style={{ fontSize:'14px'}} className="title">政府工作报告提取消流量漫游费 三运营商:立即行动</h1>,
+        <p style={{ fontSize:'12px', lineHeight: '16px', color:'#999'}} > <em style={{ float: 'right'}}>2018-03-06 13:06:36</em> <span>新闻 &nbsp; 10分钟前</span></p>
+      ]}
+      />
+
+      <ReactMediaLfixedRauto ref='rc'
+      style={{ minHeight:'60px'}}
       elements={[
         <h1 style={{ fontSize:'14px'}} className="title">政府工作报告提取消流量漫游费 三运营商:立即行动</h1>,
         <p style={{ fontSize:'12px', lineHeight: '16px', color:'#999'}} > <em style={{ float: 'right'}}>2018-03-06 13:06:36</em> <span>新闻 &nbsp; 10分钟前</span></p>
