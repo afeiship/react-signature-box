@@ -6,12 +6,12 @@ $react-media-lfixed-rauto-options:(
 @import 'node_modules/webkit-sassui-flex-justify/dist/webkit-sassui-flex-justify.scss';
 .react-media-lfixed-rauto{
   color:#000;
-  &-left{
+  >.left{
     img{
       vertical-align: top;
     }
   }
-  &-right{
+  >.right{
     &[data-justify=space-between]{
       align-content: space-between;
     }
