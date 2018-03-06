@@ -39,10 +39,10 @@ export default class extends Component {
         {...props}
         data-align={align}
         className={classNames('webkit-sassui-flex-lfixed-rauto react-media-lfixed-rauto', className)}>
-        { left && <aside className="left react-media-lfixed-rauto-left"> {left} </aside> }
+        { left && <aside className="left"> {left} </aside> }
         <div
         style={{ marginLeft: gap }}
-        className="right webkit-sassui-flex-justify react-media-lfixed-rauto-right" data-align="normal"
+        className="right webkit-sassui-flex-justify" data-align="normal"
         data-justify={justify}
         data-direction='column'>
           { elements.map(item=>item) }
